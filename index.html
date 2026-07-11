@@ -1,53 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>        ALHASHIMI INDONESIA GROUP | Luxury Real Estate, Architecture & Construction Indonesia
-</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-<style>
-.hero{background:linear-gradient(rgba(15,23,42,.65),rgba(15,23,42,.65)),url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80') center/cover;height:80vh}
-.card img{height:180px;object-fit:cover}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title data-i18n="page_title">ALHASHIMI INDONESIA GROUP | Luxury Real Estate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(15,23,42,.65), rgba(15,23,42,.65)), url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80') center/cover;
+            height: 80vh;
+        }
+        .card img { height: 180px; object-fit: cover; }
+    </style>
 </head>
-<body class="bg-gray-100">
-<nav class="bg-blue-900 text-white p-4 sticky top-0">
-<div class="max-w-7xl mx-auto flex justify-between"><h1 class="font-bold text-2xl">ALHASHIMI INDONESIA GROUP </h1><a class="bg-yellow-500 px-4 py-2 rounded" href="#services">Services</a></div>
-</nav>
+<body class="bg-gray-100 transition-all duration-300">
 
-<header class="hero flex items-center justify-center text-center text-white">
-<div>
-<h1 class="text-5xl font-bold mb-5">Build Your Dream Property</h1>
-<p class="text-xl mb-8">Real Estate • Construction • Interior Design</p>
-<a href="#services" class="bg-yellow-500 px-6 py-3 rounded-lg">Explore Services</a>
-</div>
-</header>
+    <nav class="bg-blue-900 text-white p-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="font-bold text-xl md:text-2xl" data-i18n="brand">ALHASHIMI INDONESIA GROUP</h1>
+            <div class="flex items-center gap-2 md:gap-4">
+                <select id="langSwitcher" onchange="changeLanguage(this.value)" class="bg-blue-800 text-white p-1 rounded border-none cursor-pointer text-sm">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                    <option value="id">Indonesia</option>
+                </select>
+                <a class="bg-yellow-500 px-4 py-2 rounded text-sm md:text-base font-medium" href="#services" data-i18n="nav_services">Services</a>
+            </div>
+        </div>
+    </nav>
 
-<section class="py-16 bg-white">
-<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6 text-center">
-<div><i class="fa-solid fa-house text-4xl text-blue-800"></i><h3 class="font-bold mt-3">500+ Properties</h3></div>
-<div><i class="fa-solid fa-building text-4xl text-blue-800"></i><h3 class="font-bold mt-3">Luxury Projects</h3></div>
-<div><i class="fa-solid fa-users text-4xl text-blue-800"></i><h3 class="font-bold mt-3">1000+ Clients</h3></div>
-<div><i class="fa-solid fa-award text-4xl text-blue-800"></i><h3 class="font-bold mt-3">Trusted Company</h3></div>
-</div>
-</section>
+    <header class="hero flex items-center justify-center text-center text-white p-6">
+        <div>
+            <h1 class="text-3xl md:text-5xl font-bold mb-5" data-i18n="hero_title">Build Your Dream Property</h1>
+            <p class="text-lg md:text-xl mb-8" data-i18n="hero_subtitle">Real Estate • Construction • Interior Design</p>
+            <a href="#services" class="bg-yellow-500 px-6 py-3 rounded-lg text-lg font-semibold" data-i18n="explore_btn">Explore Services</a>
+        </div>
+    </header>
 
-<section id="services" class="max-w-7xl mx-auto py-16">
-<h2 class="text-4xl font-bold text-center mb-10">Our Services</h2>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="card bg-white rounded-xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"><div class="p-5"><h3 class="font-bold text-xl">Buying & Selling</h3><p class="text-gray-600 mt-2">Professional service with high quality.</p></div></div><div class="card bg-white rounded-xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80"><div class="p-5"><h3 class="font-bold text-xl">Property Rental</h3><p class="text-gray-600 mt-2">Professional service with high quality.</p></div></div><div class="card bg-white rounded-xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80"><div class="p-5"><h3 class="font-bold text-xl">Engineering</h3><p class="text-gray-600 mt-2">Professional service with high quality.</p></div></div><div class="card bg-white rounded-xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80"><div class="p-5"><h3 class="font-bold text-xl">Interior Design</h3><p class="text-gray-600 mt-2">Professional service with high quality.</p></div></div><div class="card bg-white rounded-xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"><div class="p-5"><h3 class="font-bold text-xl">Construction</h3><p class="text-gray-600 mt-2">Professional service with high quality.</p></div></div><div class="card bg-white rounded-xl shadow overflow-hidden"><img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=800&q=80"><div class="p-5"><h3 class="font-bold text-xl">Consulting</h3><p class="text-gray-600 mt-2">Professional service with high quality.</p></div></div>
-</div></section>
-<section class="bg-blue-900 text-white py-16">
-<div class="max-w-6xl mx-auto grid md:grid-cols-4 text-center gap-6">
-<div><div class="text-5xl font-bold">500+</div><p>Projects</p></div>
-<div><div class="text-5xl font-bold">1200+</div><p>Clients</p></div>
-<div><div class="text-5xl font-bold">50+</div><p>Engineers</p></div>
-<div><div class="text-5xl font-bold">15</div><p>Years</p></div>
-</div></section>
-<footer class="bg-slate-950 text-white text-center p-8">
-<p>© 2026 Indonesia Real Estate Services</p>
-</footer>
-<a href="https://wa.me/YOURNUMBER" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl"><i class="fab fa-whatsapp"></i></a>
-</body></html>
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-6 text-center px-4">
+            <div><i class="fa-solid fa-house text-4xl text-blue-800"></i><h3 class="font-bold mt-3" data-i18n="stat1">500+ Properties</h3></div>
+            <div><i class="fa-solid fa-building text-4xl text-blue-800"></i><h3 class="font-bold mt-3" data-i18n="stat2">Luxury Projects</h3></div>
+            <div><i class="fa-solid fa-users text-4xl text-blue-800"></i><h3 class="font-bold mt-3" data-i18n="stat3">1000+ Clients</h3></div>
+            <div><i class="fa-solid fa-award text-4xl text-blue-800"></i><h3 class="font-bold mt-3" data-i18n="stat4">Trusted Company</h3></div>
+        </div>
+    </section>
+
+    <section id="services" class="max-w-7xl mx-auto py-16 px-4">
+        <h2 class="text-4xl font-bold text-center mb-10" data-i18n="services_title">Our Services</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card bg-white rounded-xl shadow overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80">
+                <div class="p-5"><h3 class="font-bold text-xl" data-i18n="s1">Buying & Selling</h3><p class="text-gray-600 mt-2" data-i18n="desc">Professional service with high quality.</p></div>
+            </div>
+            <div class="card bg-white rounded-xl shadow overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80">
+                <div class="p-5"><h3 class="font-bold text-xl" data-i18n="s2">Property Rental</h3><p class="text-gray-600 mt-2" data-i18n="desc">Professional service with high quality.</p></div>
+            </div>
+            <div class="card bg-white rounded-xl shadow overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80">
+                <div class="p-5"><h3 class="font-bold text-xl" data-i18n="s3">Engineering</h3><p class="text-gray-600 mt-2" data-i18n="desc">Professional service with high quality.</p></div>
+            </div>
+            <div class="card bg-white rounded-xl shadow overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+                <div class="p-5"><h3 class="font-bold text-xl" data-i18n="s4">Interior Design</h3><p class="text-gray-600 mt-2" data-i18n="desc">Professional service with high quality.</p></div>
+            </div>
+            <div class="card bg-white rounded-xl shadow overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80">
+                <div class="p-5"><h3 class="font-bold text-xl" data-i18n="s5">Construction</h3><p class="text-gray-600 mt-2" data-i18n="desc">Professional service with high quality.</p></div>
+            </div>
+            <div class="card bg-white rounded-xl shadow overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?auto=format&fit=crop&w=800&q=80">
+                <div class="p-5"><h3 class="font-bold text-xl" data-i18n="s6">Consulting</h3><p class="text-gray-600 mt-2" data-i18n="desc">Professional service with high quality.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-white text-center p-8">
+        <p data-i18n="footer">© 2026 ALHASHIMI INDONESIA GROUP</p>
+    </footer>
+
+    <a href="https://wa.me/YOURNUMBER" class="fixed bottom-6 right-6 bg-green-500 text-white rounded-full w-16 h-16 flex items-center justify-center text-3xl shadow-lg hover:scale-105 transition-transform z-40"><i class="fab fa-whatsapp"></i></a>
+
+    <script>
+        const translations = {
+            en: {
+                page_title: "ALHASHIMI INDONESIA GROUP | Luxury Real Estate",
+                brand: "ALHASHIMI INDONESIA GROUP", nav_services: "Services", hero_title: "Build Your Dream Property",
+                hero_subtitle: "Real Estate • Construction • Interior Design", explore_btn: "Explore Services",
+                stat1: "500+ Properties", stat2: "Luxury Projects", stat3: "1000+ Clients", stat4: "Trusted Company",
+                services_title: "Our Services", s1: "Buying & Selling", s2: "Property Rental", s3: "Engineering",
+                s4: "Interior Design", s5: "Construction", s6: "Consulting", desc: "Professional service with high quality.",
+                footer: "© 2026 ALHASHIMI INDONESIA GROUP"
+            },
+            ar: {
+                page_title: "مجموعة الهاشمي إندونيسيا | عقارات فاخرة",
+                brand: "مجموعة الهاشمي إندونيسيا", nav_services: "خدماتنا", hero_title: "ابنِ عقار أحلامك",
+                hero_subtitle: "عقارات • إنشاءات • تصميم داخلي", explore_btn: "استكشف الخدمات",
+                stat1: "500+ عقار", stat2: "مشاريع فاخرة", stat3: "1000+ عميل", stat4: "شركة موثوقة",
+                services_title: "خدماتنا", s1: "بيع وشراء", s2: "تأجير عقارات", s3: "هندسة",
+                s4: "تصميم داخلي", s5: "إنشاءات", s6: "استشارات", desc: "خدمة احترافية بجودة عالية.",
+                footer: "© 2026 مجموعة الهاشمي إندونيسيا"
+            },
+            id: {
+                page_title: "ALHASHIMI INDONESIA GROUP | Properti Mewah",
+                brand: "ALHASHIMI INDONESIA GROUP", nav_services: "Layanan", hero_title: "Bangun Properti Impian Anda",
+                hero_subtitle: "Real Estat • Konstruksi • Desain Interior", explore_btn: "Jelajahi Layanan",
+                stat1: "500+ Properti", stat2: "Proyek Mewah", stat3: "1000+ Klien", stat4: "Perusahaan Terpercaya",
+                services_title: "Layanan Kami", s1: "Jual & Beli", s2: "Penyewaan Properti", s3: "Teknik",
+                s4: "Desain Interior", s5: "Konstruksi", s6: "Konsultasi", desc: "Layanan profesional dengan kualitas tinggi.",
+                footer: "© 2026 ALHASHIMI INDONESIA GROUP"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            document.body.dir = (lang === 'ar' ? 'rtl' : 'ltr');
+            document.documentElement.lang = lang;
+            document.title = translations[lang].page_title;
+        }
+    </script>
+</body>
+</html>
