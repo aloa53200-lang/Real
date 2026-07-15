@@ -38,8 +38,7 @@
 
     <meta property="og:image" content="images/logo.png">
 
-    <meta property="og:url" content="https://yourdomain.com">
-
+<meta property="og:url" content="https://alhashimiindonesia.com">
     <!-- Twitter -->
 
     <meta name="twitter:card" content="summary_large_image">
@@ -133,9 +132,9 @@
 
                 <div class="flex items-center gap-3">
 
-                    <img src="logo.png"
+                  <img src="logo.png"
 alt="ALHASHIMI Logo"
-class="w-24 h-24 object-contain shadow-lg">
+class="w-20 h-20 md:w-24 md:h-24 object-contain mix-blend-screen"style="background:none">
 
                     <div>
 
@@ -346,7 +345,8 @@ class="md:hidden text-3xl text-white focus:outline-none">
 
                     <p data-i18n="stat_properties">
 
-                        Properties
+                        Properties Available
+
 
                     </p>
 
@@ -362,7 +362,7 @@ class="md:hidden text-3xl text-white focus:outline-none">
 
                     <p data-i18n="stat_projects">
 
-                        Projects
+                        Growing Projects
 
                     </p>
 
@@ -378,7 +378,8 @@ class="md:hidden text-3xl text-white focus:outline-none">
 
                     <p data-i18n="stat_support">
 
-                        Support
+                        Professional Support
+
 
                     </p>
 
@@ -394,7 +395,7 @@ class="md:hidden text-3xl text-white focus:outline-none">
 
                     <p data-i18n="stat_quality">
 
-                        Quality
+                        Quality Service
 
                     </p>
 
@@ -1667,8 +1668,7 @@ function changeLanguage(lang){
 
         if(translations[lang][key]){
 
-            element.textContent =
-            translations[lang][key];
+            element.textContent = translations[lang][key];
 
         }
 
@@ -1680,19 +1680,20 @@ function changeLanguage(lang){
 
     if(lang === "ar"){
 
-    document.documentElement.dir="rtl";
-    document.body.classList.add("rtl");
+        document.documentElement.dir = "rtl";
+        document.body.classList.add("rtl");
+        document.body.style.direction = "rtl";
 
-}else{
+    }else{
 
-    document.documentElement.dir="ltr";
-    document.body.classList.remove("rtl");
+        document.documentElement.dir = "ltr";
+        document.body.classList.remove("rtl");
+        document.body.style.direction = "ltr";
 
-}
+    }
 
 
-    document.title =
-    translations[lang].page_title;
+    document.title = translations[lang].page_title;
 
 }
 
