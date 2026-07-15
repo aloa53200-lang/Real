@@ -26,8 +26,7 @@
 
     <meta name="theme-color" content="#0f172a">
 
-    <link rel="canonical" href="https://yourdomain.com">
-
+<link rel="canonical" href="https://alhashimiindonesia.com">
     <!-- Open Graph -->
 
     <meta property="og:type" content="website">
@@ -92,13 +91,8 @@
             backdrop-filter: blur(12px);
         }
 
-        #mobileMenu {
-            display: none;
-        }
 
-        #mobileMenu.show {
-            display: block;
-        }
+       
 
         @media(max-width:768px) {
 
@@ -112,6 +106,15 @@
             }
 
         }
+        .rtl {
+    direction: rtl;
+    text-align: right;
+}
+
+.rtl nav,
+.rtl section {
+    direction: rtl;
+}
     </style>
 
 </head>
@@ -130,8 +133,9 @@
 
                 <div class="flex items-center gap-3">
 
-                    <img src="images/logo.png" alt="ALHASHIMI Logo"
-                        class="w-16 h-16 object-contain bg-white rounded-full p-1 shadow-lg">
+                    <img src="logo.png"
+alt="ALHASHIMI Logo"
+class="w-24 h-24 object-contain shadow-lg">
 
                     <div>
 
@@ -212,18 +216,19 @@
 
                 <!-- Mobile Button -->
 
-                <button onclick="toggleMenu()" class="md:hidden text-3xl">
+              <button 
+onclick="toggleMenu()" 
+class="md:hidden text-3xl text-white focus:outline-none">
 
-                    <i class="fa-solid fa-bars"></i>
+<i class="fa-solid fa-bars"></i>
 
-                </button>
+</button>
 
             </div>
 
             <!-- Mobile Menu -->
 
-            <div id="mobileMenu" class="bg-blue-950 px-5 py-4 space-y-4 md:hidden">
-
+<div id="mobileMenu" class="hidden bg-blue-950 px-5 py-4 space-y-4 md:hidden">
                 <a href="#home" class="block" data-i18n="nav_home">
 
                     Home
@@ -648,7 +653,7 @@
 
                 <div class="bg-gray-100 rounded-2xl shadow-lg overflow-hidden hover:-translate-y-2 transition">
 
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=900&q=80"
+                    <img src="HO.jpg"
                         alt="Toyota Avanza Rental Indonesia" loading="lazy" class="w-full h-56 object-cover">
 
 
@@ -1160,7 +1165,9 @@ class="bg-blue-700 px-6 py-3 rounded-lg">
 
 <i class="fa-solid fa-phone"></i>
 
+<span data-i18n="call_us">
 Call Us
+</span>
 
 </a>
 
@@ -1172,7 +1179,9 @@ class="bg-gray-700 px-6 py-3 rounded-lg">
 
 <i class="fa-solid fa-envelope"></i>
 
+<span data-i18n="email">
 Email
+</span>
 
 </a>
 
@@ -1206,7 +1215,7 @@ WhatsApp
 </p>
 
 
-<p class="text-gray-500 mt-3">
+<p class="text-gray-500 mt-3" data-i18n="all_rights">
 
 All Rights Reserved
 
@@ -1327,7 +1336,15 @@ All Rights Reserved
                 premium: "Premium Quality",
                 premium_desc: "High quality services.",
 
+                    stat_properties: "Properties",
+                    stat_projects: "Projects",
+                    stat_support: "Support",
+                    stat_quality: "Quality",
 
+                    all_rights: "All Rights Reserved",
+
+                    call_us: "Call Us",
+                    email: "Email",
                 contact_title: "Contact ALHASHIMI INDONESIA GROUP",
 
                 contact_desc:
@@ -1335,7 +1352,9 @@ All Rights Reserved
 
 
                 footer:
-                    "© 2026 ALHASHIMI INDONESIA GROUP"
+                "© 2026 ALHASHIMI INDONESIA GROUP",
+
+            stat_properties: "Properties",
 
             },
 
@@ -1440,7 +1459,16 @@ All Rights Reserved
 
                 premium: "جودة ممتازة",
                 premium_desc: "خدمات عالية الجودة.",
+                
+                stat_properties: "العقارات",
+                stat_projects: "المشاريع",
+                stat_support: "الدعم",
+                stat_quality: "الجودة",
 
+                all_rights: "جميع الحقوق محفوظة",
+
+                call_us: "اتصل بنا",
+                email: "البريد الإلكتروني",
 
                 contact_title: "تواصل مع مجموعة الهاشمي إندونيسيا",
 
@@ -1457,106 +1485,231 @@ All Rights Reserved
 
             id: {
 
+    page_title: "ALHASHIMI INDONESIA GROUP | Properti & Rental Kendaraan",
 
-                page_title: "ALHASHIMI INDONESIA GROUP | Properti & Rental Kendaraan",
+    nav_home: "Beranda",
+    nav_services: "Layanan",
+    nav_cars: "Mobil",
+    nav_motorcycles: "Motor",
+    nav_contact: "Kontak",
 
-                nav_home: "Beranda",
+    hero_title:
+        "Properti Mewah, Konstruksi & Rental Kendaraan",
 
-                nav_services: "Layanan",
+    hero_text:
+        "Kami menyediakan layanan profesional di bidang Properti, Konstruksi, Rental Mobil, Rental Motor, Teknik, Desain Interior dan Konsultasi Bisnis di Indonesia.",
 
-                nav_cars: "Mobil",
+    explore_btn:
+        "Lihat Layanan",
 
-                nav_motorcycles: "Motor",
+    whatsapp_btn:
+        "Hubungi WhatsApp",
 
-                nav_contact: "Kontak",
+    whatsapp:
+        "WhatsApp",
 
-                hero_title:
-                    "Properti Mewah Konstruksi & Rental Kendaraan",
 
-                hero_text:
-                    "Kami menyediakan layanan profesional Properti, Konstruksi dan Rental Kendaraan.",
+    services_title:
+        "Layanan Kami",
 
-                explore_btn: "Lihat Layanan",
+    services_desc:
+        "Solusi profesional untuk properti, konstruksi, teknik dan rental kendaraan.",
 
-                whatsapp_btn: "Kontak WhatsApp",
 
-                whatsapp: "WhatsApp",
+    real_estate_title:
+        "🏡 Properti",
 
-                services_title: "Layanan Kami",
+    real_estate_desc:
+        "Jual beli dan sewa apartemen, villa, tanah dan gedung komersial dengan layanan profesional.",
 
-                services_desc:
-                    "Solusi profesional untuk properti dan konstruksi.",
 
-                cars_title: "Rental Mobil",
+    construction_title:
+        "🏗 Konstruksi",
 
-                cars_desc:
-                    "Sewa mobil nyaman di Indonesia.",
+    construction_desc:
+        "Pembangunan rumah dan gedung komersial dengan kualitas tinggi dan standar modern.",
 
-                motorcycles_title: "Rental Motor",
 
-                motorcycles_desc:
-                    "Sewa motor modern.",
+    interior_title:
+        "🛋 Desain Interior",
 
-                why_title: "Mengapa Memilih ALHASHIMI?",
+    interior_desc:
+        "Desain interior mewah untuk rumah, villa, kantor dan bangunan komersial.",
 
-                contact_title: "Hubungi ALHASHIMI",
 
-                footer:
-                    "© 2026 ALHASHIMI INDONESIA GROUP"
+    engineering_title:
+        "📐 Teknik",
 
-            }
+    engineering_desc:
+        "Gambar arsitektur, pengawasan teknik dan manajemen proyek.",
 
+
+    consulting_title:
+        "💼 Konsultasi Bisnis",
+
+    consulting_desc:
+        "Konsultasi investasi, pengembangan bisnis dan peluang properti.",
+
+
+    management_title:
+        "🏢 Manajemen Properti",
+
+    management_desc:
+        "Layanan lengkap untuk pengelolaan apartemen, villa, kantor dan properti komersial.",
+
+
+    cars_title:
+        "🚗 Rental Mobil",
+
+    cars_desc:
+        "Sewa mobil nyaman dan terpercaya untuk perjalanan Anda di Indonesia.",
+
+
+    avanza_desc:
+        "Mobil keluarga nyaman untuk 7 penumpang.",
+
+    fortuner_desc:
+        "SUV mewah dengan performa kuat.",
+
+    brio_desc:
+        "Mobil kecil ekonomis untuk kota.",
+
+
+    book_now:
+        "Pesan Sekarang",
+
+
+    motorcycles_title:
+        "🛵 Rental Motor",
+
+    motorcycles_desc:
+        "Sewa motor modern dan ekonomis untuk menjelajah Indonesia.",
+
+
+    beat_desc:
+        "Motor ringan dan hemat.",
+
+    vario_desc:
+        "Motor matic modern.",
+
+    nmax_desc:
+        "Motor matic premium.",
+
+    pcx_desc:
+        "Motor otomatis mewah.",
+
+
+
+    why_title:
+        "⭐ Mengapa Memilih ALHASHIMI?",
+
+
+    trusted:
+        "Layanan Terpercaya",
+
+    trusted_desc:
+        "Layanan profesional dan dapat dipercaya.",
+
+
+    support:
+        "Dukungan 24/7",
+
+    support_desc:
+        "Selalu siap membantu pelanggan.",
+
+
+    vehicles:
+        "Kendaraan Berkualitas",
+
+    vehicles_desc:
+        "Mobil dan motor bersih serta nyaman.",
+
+
+    premium:
+        "Kualitas Premium",
+
+    premium_desc:
+        "Pelayanan dengan standar tinggi.",
+
+
+
+    contact_title:
+        "Hubungi ALHASHIMI INDONESIA GROUP",
+
+        stat_properties: "Properti",
+        stat_projects: "Proyek",
+        stat_support: "Dukungan",
+        stat_quality: "Kualitas",
+
+        all_rights: "Semua Hak Dilindungi",
+
+        call_us: "Hubungi Kami",
+        email: "Email",
+
+    contact_desc:
+        "Untuk layanan properti, konstruksi dan rental kendaraan.",
+
+
+
+    footer:
+        "© 2026 ALHASHIMI INDONESIA GROUP"
+
+}
         };
 
 
+function changeLanguage(lang){
 
-        function changeLanguage(lang) {
+    document.querySelectorAll("[data-i18n]")
+    .forEach(element=>{
 
+        let key = element.getAttribute("data-i18n");
 
-            document.querySelectorAll("[data-i18n]")
-                .forEach(element => {
+        if(translations[lang][key]){
 
-                    let key = element.getAttribute("data-i18n");
-
-
-                    if (translations[lang][key]) {
-
-                        element.textContent = translations[lang][key];
-
-                    }
-
-                });
-
-
-
-            document.documentElement.lang = lang;
-
-
-            document.documentElement.dir =
-                lang === "ar" ? "rtl" : "ltr";
-
-
-
-            document.title =
-                translations[lang].page_title;
-
+            element.textContent =
+            translations[lang][key];
 
         }
+
+    });
+
+
+    document.documentElement.lang = lang;
+
+
+    if(lang === "ar"){
+
+    document.documentElement.dir="rtl";
+    document.body.classList.add("rtl");
+
+}else{
+
+    document.documentElement.dir="ltr";
+    document.body.classList.remove("rtl");
+
+}
+
+
+    document.title =
+    translations[lang].page_title;
+
+}
 
 
 
     </script>
     <script>
 
-        function toggleMenu() {
+function toggleMenu(){
 
-            document
-                .getElementById("mobileMenu")
-                .classList.toggle("hidden");
+    const menu = document.getElementById("mobileMenu");
 
-        }
+    menu.classList.toggle("hidden");
 
-    </script>
+}
+
+</script>
     <!-- FLOATING WHATSAPP BUTTON -->
 
 <a
@@ -1567,7 +1720,21 @@ class="fixed bottom-5 right-5 bg-green-500 text-white w-16 h-16 rounded-full fle
 <i class="fab fa-whatsapp"></i>
 
 </a>
+<script>
 
+document.querySelectorAll("#mobileMenu a").forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+document
+.getElementById("mobileMenu")
+.classList.add("hidden");
+
+});
+
+});
+
+</script>
 </body>
 
 </html>
